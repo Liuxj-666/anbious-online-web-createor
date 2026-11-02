@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="墨绿色夜空中、月牙与拱门构成的抽象封面">
+  <defs>
+    <linearGradient id="nightBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b2a24"/>
+      <stop offset="1" stop-color="#0e1713"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#e8d7ac" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#e8d7ac" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain4">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .055"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#nightBg)"/>
+  <circle cx="1100" cy="286" r="310" fill="url(#glow)"/>
+  <circle cx="1100" cy="286" r="148" fill="#e6d4a9"/>
+  <circle cx="1160" cy="238" r="148" fill="#16231d"/>
+  <g fill="#e6d4a9">
+    <circle cx="292" cy="190" r="3"/><circle cx="430" cy="112" r="2"/><circle cx="620" cy="250" r="2.5"/>
+    <circle cx="760" cy="120" r="1.5"/><circle cx="940" cy="84" r="2"/><circle cx="1350" cy="120" r="2.5"/>
+    <circle cx="1460" cy="340" r="1.5"/><circle cx="1220" cy="520" r="2"/><circle cx="540" cy="430" r="1.5"/>
+  </g>
+  <path d="M-40 1000V760c0-256 208-464 464-464s464 208 464 464v240" fill="none" stroke="#e6d4a9" stroke-width="2" opacity=".55"/>
+  <path d="M60 1000V770c0-202 164-366 366-366s366 164 366 366v230" fill="none" stroke="#e6d4a9" stroke-width="1" opacity=".25"/>
+  <path d="M854 1000V690c0-160 130-290 290-290s290 130 290 290v310" fill="#22352b"/>
+  <path d="M914 1000V702c0-127 103-230 230-230s230 103 230 230v298" fill="#e6d4a9" opacity=".16"/>
+  <path d="M0 902h1600" stroke="#e6d4a9" stroke-width="1" opacity=".2"/>
+  <rect width="1600" height="1000" filter="url(#grain4)" opacity=".65"/>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="深青色海浪、橙色月亮与档案线条构成的抽象封面">
+  <defs>
+    <linearGradient id="tideBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#173c3a"/>
+      <stop offset="1" stop-color="#0c2426"/>
+    </linearGradient>
+    <linearGradient id="moon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#efb06a"/>
+      <stop offset="1" stop-color="#d87a47"/>
+    </linearGradient>
+    <filter id="grain2">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .06"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#tideBg)"/>
+  <circle cx="1228" cy="254" r="166" fill="url(#moon)"/>
+  <g fill="none" stroke="#dce6d8" stroke-width="1.6" opacity=".36">
+    <circle cx="1228" cy="254" r="210"/>
+    <circle cx="1228" cy="254" r="256"/>
+    <path d="M970 254h516M1228 0v508"/>
+  </g>
+  <g fill="none" stroke-linecap="round">
+    <path d="M-60 640c174-116 288-116 462 0s288 116 462 0 288-116 462 0 288 116 462 0" stroke="#9bb4a4" stroke-width="3" opacity=".66"/>
+    <path d="M-60 724c174-116 288-116 462 0s288 116 462 0 288-116 462 0 288 116 462 0" stroke="#c7d5c4" stroke-width="2" opacity=".45"/>
+    <path d="M-60 808c174-116 288-116 462 0s288 116 462 0 288-116 462 0 288 116 462 0" stroke="#9bb4a4" stroke-width="2" opacity=".3"/>
+    <path d="M-60 892c174-116 288-116 462 0s288 116 462 0 288-116 462 0 288 116 462 0" stroke="#c7d5c4" stroke-width="1.5" opacity=".22"/>
+  </g>
+  <g fill="#e7eee2" font-family="Georgia, serif" font-size="20" opacity=".72">
+    <text x="108" y="112">TIDE ARCHIVE / 01</text>
+    <text x="108" y="146">31.2304° N · 121.4737° E</text>
+  </g>
+  <g stroke="#e7eee2" opacity=".5">
+    <path d="M108 180h1M110 180h1M112 180h1M114 180h1" stroke-width="2"/>
+    <path d="M108 900h268" stroke-width="1"/>
+    <path d="M376 900v-18" stroke-width="1"/>
+  </g>
+  <rect width="1600" height="1000" filter="url(#grain2)" opacity=".6"/>
+</svg>

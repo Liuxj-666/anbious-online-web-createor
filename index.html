@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="岸标是一个只做三件事的个人 web 工具：设计、存储、指路。用专区与子专区整理文章、图片、视频、音频和文件，自定义底色与分栏，按专区搜索，没有推荐算法。">
+  <meta name="theme-color" content="#f2ede2">
+  <title>岸标 ANBIAO · 设计、存储、指路</title>
+  <link rel="icon" type="image/svg+xml" href="assets/mark.svg">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <div class="paper-grain" aria-hidden="true"></div>
+
+  <header class="app-header" id="app-header">
+    <div class="header-inner">
+      <a class="brand" href="#/guide" aria-label="岸标首页">
+        <img class="brand-mark" src="assets/mark.svg" alt="" width="36" height="36">
+        <span class="brand-words">
+          <strong>岸标</strong>
+          <small>ANBIAO</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="主导航">
+        <a href="#/guide" data-nav="guide"><span class="nav-num">01</span>指路</a>
+        <a href="#/studio" data-nav="studio"><span class="nav-num">02</span>我的 Web</a>
+        <a href="#/settings" data-nav="settings"><span class="nav-num">03</span>设置</a>
+        <a href="#/login" data-nav="login" id="auth-nav-link"><span class="nav-num">04</span><span id="auth-nav-label">登录</span></a>
+      </nav>
+
+      <a class="header-cta" href="#/studio" aria-label="开始搭建我的 Web">
+        <span>开始搭建</span>
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="app-footer" id="app-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="brand brand--footer" href="#/guide" aria-label="岸标首页">
+          <img class="brand-mark" src="assets/mark.svg" alt="" width="32" height="32">
+          <span class="brand-words"><strong>岸标</strong><small>ANBIAO</small></span>
+        </a>
+        <p>只做三件事：设计、存储、指路。</p>
+      </div>
+      <div class="footer-principles" aria-label="岸标原则">
+        <span><i>01</i>本人同意后公示</span>
+        <span><i>02</i>随时可以撤回</span>
+        <span><i>03</i>没有推荐机制</span>
+      </div>
+      <div class="footer-meta">
+        <nav aria-label="页脚导航">
+          <a href="#/guide">指路</a>
+          <a href="#/studio">我的 Web</a>
+          <a href="#/settings">设置</a>
+        </nav>
+        <p>本地优先 · 无追踪 · 无推荐算法</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modal-root" class="modal-root" aria-live="polite"></div>
+  <div id="toast-stack" class="toast-stack" aria-live="polite" aria-atomic="false"></div>
+
+  <noscript>
+    <div class="noscript">岸标需要启用 JavaScript 才能编辑与保存你的 web。</div>
+  </noscript>
+
+  <script src="assets/builtin-covers.js"></script>
+  <script src="assets/site-styles.js"></script>
+  <script src="assets/site-runtime.js"></script>
+  <script src="assets/vendor/supabase.js"></script>
+  <script src="assets/app-data.js"></script>
+  <script src="assets/supabase-adapter.js"></script>
+  <script src="assets/app-views.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="暖色纸张、拱门与落日构成的抽象封面">
+  <defs>
+    <linearGradient id="paperBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2eadb"/>
+      <stop offset="1" stop-color="#dfd2bb"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d56a42"/>
+      <stop offset="1" stop-color="#b94b32"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".82" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .075"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#paperBg)"/>
+  <circle cx="1150" cy="292" r="214" fill="url(#sun)"/>
+  <path d="M112 1000V560C112 366 262 208 448 208s336 158 336 352v440" fill="#efe7d7" stroke="#24352b" stroke-width="3"/>
+  <path d="M186 1000V570c0-152 117-275 262-275s262 123 262 275v430" fill="none" stroke="#b9a98d" stroke-width="2"/>
+  <path d="M728 1000V632c0-126 97-228 216-228s216 102 216 228v368" fill="#24352b"/>
+  <path d="M779 1000V641c0-94 72-170 161-170s161 76 161 170v359" fill="#c9b99c"/>
+  <path d="M0 790h1600" stroke="#24352b" stroke-width="2" opacity=".34"/>
+  <path d="M0 848h1600" stroke="#24352b" stroke-width="1" opacity=".2"/>
+  <g fill="none" stroke="#24352b" stroke-width="2" opacity=".58">
+    <path d="M1250 1000V730c0-80 61-145 137-145s137 65 137 145v270"/>
+    <path d="M1298 1000V742c0-48 37-87 89-87s89 39 89 87v258"/>
+  </g>
+  <g fill="#24352b">
+    <circle cx="1084" cy="712" r="5"/>
+    <circle cx="1010" cy="760" r="3"/>
+    <circle cx="1434" cy="624" r="4"/>
+  </g>
+  <path d="M80 130h220M80 130v42" fill="none" stroke="#24352b" stroke-width="2" opacity=".7"/>
+  <rect width="1600" height="1000" filter="url(#grain)" opacity=".65"/>
+</svg>
